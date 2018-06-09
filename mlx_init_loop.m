@@ -93,8 +93,6 @@ void *mlx_init()
   new_mlx->font->vertexes[5] = -FONT_HEIGHT-1;
   new_mlx->font->vertexes[7] = -FONT_HEIGHT-1;
 
-  mlx_del(new_mlx);
-  sleep(100);
   return ((void *)new_mlx);
 }
 
