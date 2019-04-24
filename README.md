@@ -1,6 +1,5 @@
 # minilibx
-minilibx with my small additions
 
-Welcome to the minilibx wiki!
+minilibx is a 42 student made graphics library, that I like to use because it's simplicity allows for a lot of my own learning.
 
-minilibx is a fantastic graphics library. However, when digging for leaks in fdf and fractol, I noticed that it leaked when freeing the mlx pointer from mlx_init(). So I added an mlx_free() function that properly frees that pointer. minilibx smartly only makes your code handle void pointers so it makes sense to have mlx_free take a void pointer so you don't have to do much extra work.
+When digging for leaks in my fdf and fractol projects, I noticed that mlx leaked when freeing an mlx pointer initialized mlx_init(). So I added an mlx_free() function that properly frees that pointer properly.
